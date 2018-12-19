@@ -44,7 +44,6 @@ public class Main {
         System.out.println(sentence); //display
         System.out.println("");
         choice();
-        //LOWER_FIRST();
     }
     public static void UPPER_FIRST(){
         System.out.println("Input text");
@@ -52,13 +51,6 @@ public class Main {
         char[] array;
 
         array = sentence.toCharArray(); //put the sentence into a character array
-
-        /*for (int x = 0; x < array.length; x++) {
-            if (array[x] == ' ') { //if the character is blank, move to the next index
-                x++;
-            }
-            array[x] = Character.toUpperCase(array[x]);
-        }*/
 
         for (int i = 0; i < array.length; i += 2) {
             if (array[i] == ' ') { //if the character is blank, move to the next index
@@ -72,21 +64,6 @@ public class Main {
         System.out.println(sentence); //display
         System.out.println("");
         choice();
-        /*String sentence = in.nextLine();
-        char[] array1;
-
-        array1 = sentence.toCharArray();
-
-        for (int i = 0; i < array1.length; i += 2) {
-            if (array1[i] == ' ') {
-                i++;
-            }
-            array1[i] = Character.toUpperCase(array1[i]);
-        }
-        sentence = new String(array1); //revert array back to String
-        System.out.println(sentence); //display
-        System.out.println("");
-        choice();*/
     }
 
     public static void main(String[] args) {
